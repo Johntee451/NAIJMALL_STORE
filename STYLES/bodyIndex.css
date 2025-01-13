@@ -3,18 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px;
     gap: 0px;
     background-image: url("../IMAGES/storebg16.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 200px;
 }
 
-.firstBody-Div:hover{
+/*.firstBody-Div:hover{
     background-image: url("../IMAGES/storebg11.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 .firstBody-Div .bodyDesc-Div{
     flex: 1;
@@ -24,11 +24,11 @@
     font-size: 30px;
 }
 
-.firstBody-Div .bodyDesc-Div:hover{
+/*.firstBody-Div .bodyDesc-Div:hover{
     border-radius: 30px;
-    font-size: 35px;
+    font-size: 31px;
 }
-
+*/
 
 .firstBody-Div .bodySearch-Div input{
     width: 600px;
@@ -75,6 +75,11 @@
     font-family: monospace;
 }
 
+.firstBody-Div .bodySearch-Div button img{
+    width: 20px;
+    height: 20px;
+}
+
 
 
 
@@ -98,6 +103,7 @@
     padding: 50px 200px;
     gap: 30px;
     border-bottom: 1px solid rgb(122, 119, 119);
+    
 }
 
 .bodyCategory-Div .categoryHeader-Div h1{
@@ -107,6 +113,13 @@
     font-size: 40px;
     font-family: monospace;
     text-shadow: 2px 2px 5px
+}
+
+.bodyCategory-Div .categoryHeader-Div img{
+    width: 200px;
+    height: 200px;
+    padding-left: 70px;
+
 }
 
 .bodyCategory-Div .categoryHeaderDetail-Div{
@@ -139,6 +152,11 @@
     width: 100%;
     box-shadow: 5px 5px 10px;
     /*background: blue;*/
+}
+
+.bodyCategory-Div .categoryHeaderDetail-Div div img{
+    width: 150px;
+    height: 150px;
 }
 
 .bodyCategory-Div .categoryHeaderDetail-Div div h2 p{
@@ -238,156 +256,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bodyFooter-Div{
-    display:flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*height: 600px;*/
-    /*width: 100%;*/
-    background: rgb(65, 60, 60);
-    color: whitesmoke;
-    gap: 0px;
-}
-
-.bodyFooter-Div .firstBodyFooter-Div{
-    display:flex ;
-    justify-content: space-around;
-    align-items: center;
-    /*background: rgb(216, 119, 119);*/
-    width: 98%;
-    padding: 5px;
-
-}
-
-.bodyFooter-Div .firstBodyFooter-Div .firstBodyFooterLogo-Div{
-    flex: 1;
-}
-
-.bodyFooter-Div .firstBodyFooter-Div .firstBodyFooterLogo-Div a img{
-    width: 180px;
-    height: 70px;
-    padding:9px;
-    border-radius: 20px;
-}
-
-.bodyFooter-Div .firstBodyFooter-Div div p{
-    padding: 10px;
-}
-
-.bodyFooter-Div .firstBodyFooter-Div div input{
-    width: 400px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid wheat;
-    font-family: monospace;
-    font-size: 20px;
-    padding: 20px;
-}
-
-.bodyFooter-Div .firstBodyFooter-Div div button{
-    flex: 1;
-    padding: 10px 40px;
-    /*border:3px solid violet;*/
-    Background: rgb(224, 167, 23);
-    border-radius: 20px;
-    color: white;
-    border: 0px;
-    font-size: 15px;
-    font-family: monospace;
-}
-
-
-
-.bodyFooter-Div .secondBodyFooter-Div{
-    display:flex ;
-    justify-content: space-evenly;
-    align-items: center;
-    /*background: red;*/
-    gap: 10px;
-}
-
-.bodyFooter-Div .secondBodyFooter-Div .secondBodyFooterList-Div{
-    flex: 1;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.bodyFooter-Div .secondBodyFooter-Div .secondBodyFooterList-Div ul{
-    list-style-type: none;
-    /*font-size: 10px;*/
-    padding: 1opx;
-}
-
-/*
-.bodyFooter-Div .secondBodyFooter-Div .secondBodyFooterList-Div ul li{
-    
-}
-*/
-
-.bodyFooter-Div .secondBodyFooter-Div .secondBodyFooterList-Div ul li a{
-    color: aliceblue;
-}
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bodyLastFooter-Div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid grey;
-    background: rgb(65, 60, 60);
-    padding: 10px;
-    gap: 0px;
-}
-
-.bodyLastFooter-Div .bodyLastFooterLink-Div{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-
-.bodyLastFooter-Div .bodyLastFooterLink-Div a img{
-    flex: 1;
-    flex-wrap: wrap;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-}
-
-.bodyLastFooter-Div .bodyLastFooterCopyR-Div a{
-    flex: 1;
-    color: whitesmoke;
-    text-decoration: none;
-}

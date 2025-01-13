@@ -21,8 +21,10 @@ body{
     justify-content:space-evenly;
     align-items:center;
     /*padding:0px;*/
-    border-bottom: 1px solid darkslategray;
-    /*background:rgb(103, 44, 146);*/
+    /*border-bottom: 1px solid rgb(145, 126, 126);*/
+    background:white;
+    width: 100%;
+    position: fixed;
 }
     
 .header-Div .logo-Div{
@@ -37,9 +39,9 @@ body{
     
 .header-Div .logo-Div .websiteLogo-Div a img{
     flex:1;
-    width: 180px;
-    height: 70px;
-    padding:20px;
+    width: 120px;
+    height: 100px;
+    padding:0px;
     /*border-radius:10px;*/
     /*border:2px solid violet;*/
     /*font-size:40px;*/
@@ -70,6 +72,11 @@ body{
     /*Background:rgb(117, 82, 117);*/
 }
 
+.header-Div .nav-Div .navLink-Div a img{
+    width: 16px;
+    height: 16px;
+}
+
 .header-Div .nav-Div .navLink-Div a:hover{
     background: grey;
     color: white;
@@ -90,7 +97,7 @@ body{
     /*border:2px solid violet;*/
     font-size:20px;
     font-family: monospace;
-    Background: rgb(223, 191, 10);
+    Background: rgb(95, 17, 184);
 }
 
 .header-Div .nav-Div .navLink-Div .storeP2P{
@@ -102,7 +109,7 @@ body{
     /*border:2px solid violet;*/
     font-size:20px;
     font-family: monospace;
-    Background: rgb(49, 158, 49);
+    Background: rgb(184, 17, 109);
 }
 
 /*END of the header-navigation styling*/

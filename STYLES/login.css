@@ -5,21 +5,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    padding: 3px;
+    margin-bottom: 5%;
     margin-left: 35%;
     /*border:5px solid violet;*/
     border-radius: 70px;
-    padding: 50px;
-    width: 400px;
+    width: 500px;
     gap: 2px;
     background: rgb(255, 255, 255);
     font-family: monospace;
     box-shadow: 5px 5px 10px;
 }
 
+.login-Div:hover{
+    padding: 5px;
+    box-shadow: 5px 5px 15px;
+    
+}
+
 .login-Div .logHeader-Div {
     font-size: 20px;
     color: rgb(0, 0, 0);
+    padding-top: 100px;
 }
 
 .login-Div .userPass-Div{
@@ -40,6 +47,11 @@
     border: 1px solid black;
     font-family: monospace;
     font-size: 20px;
+}
+
+.login-Div .userPass-Div input:hover{
+    font-size: 30px;
+    padding: 5px;
 }
 
 .login-Div .resetLog-Div{
