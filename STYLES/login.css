@@ -2,34 +2,37 @@
 
 .login-Div{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+.login-Div .innerlogin-Div{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3px;
-    margin-bottom: 5%;
-    margin-left: 35%;
-    /*border:5px solid violet;*/
-    border-radius: 70px;
-    width: 500px;
-    gap: 2px;
-    background: rgb(255, 255, 255);
-    font-family: monospace;
+    padding: 20px 30px;
+    border-radius: 100px;
     box-shadow: 5px 5px 10px;
 }
 
-.login-Div:hover{
-    padding: 5px;
-    box-shadow: 5px 5px 15px;
-    
+.login-Div .innerlogin-Div:hover{
+    box-shadow: 10px 10px 50px;
 }
 
-.login-Div .logHeader-Div {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    padding-top: 100px;
+
+.login-Div .innerlogin-Div .logHeader-Div h1, h2{
+    flex: 1;
+    /*font-size: 20px;*/
+    color:rgb(145, 126, 126);
+    /*padding-top: 100px;*/
+    text-align: center;
 }
 
-.login-Div .userPass-Div{
+.login-Div .innerlogin-Div .userPass-Div{
     flex: 1;
     flex-wrap: wrap;
     padding: 20px;
@@ -40,7 +43,11 @@
     font-size: 20px;
 }
 
-.login-Div .userPass-Div input{
+.login-Div .innerlogin-Div .userPass-Div label{
+    color: rgb(145, 126, 126);
+}
+
+.login-Div .innerlogin-Div .userPass-Div input{
     width: 430px;
     height: 50px;
     border-radius: 20px;
@@ -49,12 +56,12 @@
     font-size: 20px;
 }
 
-.login-Div .userPass-Div input:hover{
+.login-Div .innerlogin-Div .userPass-Div input:hover{
     font-size: 30px;
     padding: 5px;
 }
 
-.login-Div .resetLog-Div{
+.login-Div .innerlogin-Div .resetLog-Div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +72,7 @@
     font-size: 20px;
 }
 
-.login-Div .resetLog-Div div button{
+.login-Div .innerlogin-Div .resetLog-Div div button{
     flex: 1;
     padding: 20px 70px;
     /*border:3px solid violet;*/
@@ -77,18 +84,20 @@
     font-family: monospace;
 }
 
-.login-Div .forgetPass-Div{
+.login-Div .innerlogin-Div .forgetPass-Div{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /*border:3px solid violet;*/
     background: green;
     border-radius: 50px;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
+    align-self: center;
+    width: 400px;
 }
 
-.login-Div .forgetPass-Div div a{
+.login-Div .innerlogin-Div .forgetPass-Div div a{
     flex: 1;
     flex-wrap: wrap;
     color: rgb(236, 228, 229);

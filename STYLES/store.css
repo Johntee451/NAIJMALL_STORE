@@ -1,9 +1,11 @@
 .firstBodyStore-Div{
     display: flex;
+    flex-direction: row;
     /*justify-content: space-around;*/
     /*align-items: center;*/
     padding-top: 110px;
     gap: 20px;
+    padding-bottom: 100px;
     /*background: red;*/
 }
 
@@ -61,51 +63,96 @@
 
 .firstBodyStore-Div .firstBodyImgPriceDesc-Div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    /*align-items: center;*/
-    gap: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
     background: rgb(248, 247, 247);
     border-radius: 10px ;
-    padding: 5px 300px;
-    padding-bottom: 100px;
+    padding: 20px;
     /*height: 500px;*/
 }
 
-.firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div{
-    flex: 1;
-    flex-wrap: wrap;
-    /*justify-content: center;*/
-    /*align-items: space-evenly;*/
-    gap: 70px;
-    padding: 10px;
-    background: rgb(255, 255, 255);
+.firstBodyStore-Div .bodySearch-Div input{
+    width: 600px;
+    height: 40px;
     border-radius: 20px;
+    /*border: 1px solid black;*/
+    font-family: monospace;
+    font-size: 20px;
+    padding: 20px 80px;
+    text-align: center;
+}
+
+.firstBodyStore-Div .bodySearch-Div input:hover{
+    font-size: 21px;
+}
+
+.firstBodyStore-Div .bodySearch-Div button{
+    flex: 1;
+    width: 200px;
+    height: 45px;
+    /*border:3px solid violet;*/
+    Background:rgb(92, 24, 81);;
+    border-radius: 20px;
+    color: rgb(241, 240, 240);
+    border: 0px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.firstBodyStore-Div .bodySearch-Div button:hover{
+    Background:rgb(138, 108, 32);
+    border-radius: 30px;
+    color: white;
+    font-size: 22px;
+    text-shadow: 10px 10px 50px;
+}
+
+.firstBodyStore-Div .bodySearch-Div button img{
+    width: 20px;
+    height: 20px;
+}
+
+.firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: center;
+    /*gap: 70px;*/
+    padding: 20px 25px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 480px;
+    width: 400px;
     /*padding: 10px 300px;*/
-    box-shadow: 5px 5px 10px ;
+    box-shadow: 5px 5px 10px;
 }
 
 
-/*.firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div{
+/*.firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div div{
     flex: 1;
-    flex-wrap: wrap;
-    padding: 20px;
-    /*border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px ;
 }
 */
 
+
 .firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div:hover{
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 8px 8px 15px ;
+    /*padding: 30px;
+    border-radius: 25px;*/
+    box-shadow: 10px 10px 50px ;
 }
 
 .firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div img{
     width: 100%;
     height: 200px;
+    border-radius: 20px;
+}
+
+.firstBodyStore-Div .firstBodyImgPriceDesc-Div .firstBodyInnerImgPriceDesc-Div img:hover{
+    width: 100%;
+    height: 250px;
     border-radius: 20px;
 }
 

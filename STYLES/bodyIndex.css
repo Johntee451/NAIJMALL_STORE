@@ -103,7 +103,8 @@
     padding: 50px 200px;
     gap: 30px;
     border-bottom: 1px solid rgb(122, 119, 119);
-    
+    color: rgb(145, 126, 126);
+    background: rgb(248, 247, 247);
 }
 
 .bodyCategory-Div .categoryHeader-Div h1{
@@ -129,9 +130,8 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    gap: 40px;
-    /*background: red;*/
-    /*width: 100%;*/
+    gap: 60px;
+    width: 900px;
 }
 
 .bodyCategory-Div .categoryHeaderDetail-Div div{
@@ -139,18 +139,19 @@
     border-radius: 70px;
     padding: 60px;
     /*height: 0px;*/
-    width: 100%;
+    /*width: 10px;*/
     box-shadow: 5px 5px 10px;
-    /*background: blue;*/
+    background: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .bodyCategory-Div .categoryHeaderDetail-Div div:hover{
-    flex: 1;
+    /*flex: 1;
     border-radius: 90px;
     padding: 80px;
     /*height: 0px;*/
-    width: 100%;
-    box-shadow: 5px 5px 10px;
+    /*width: 100%;*/
+    box-shadow: 10px 10px 50px;
     /*background: blue;*/
 }
 
@@ -160,7 +161,6 @@
 }
 
 .bodyCategory-Div .categoryHeaderDetail-Div div h2 p{
-    text-align: center;
     padding: 5px;
     /*color:rgb(145, 126, 126);*/
     /*font-size: 40px;*/
