@@ -37,6 +37,7 @@
     text-decoration: none;
     color: rgb(145, 126, 126);
     font-family: monospace;
+    border-left: 2px solid green;
 }
 
 .firstBodyStore-Div .firstBodycategory-Div ul li:hover{

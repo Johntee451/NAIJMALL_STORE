@@ -1,0 +1,60 @@
+.firstBodyContact-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+    gap: 20px;
+    text-align: center;
+    font-family: monospace;
+    color:rgb(145, 126, 126);
+    background: rgb(248, 247, 247);
+    font-size: 20px;
+}
+
+.firstBodyContact-Div .bodyContactHeadParag-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstBodyContact-Div .bodyContactHeadParag-Div .bodyContactHead-Div{
+    flex: 1;
+}
+
+.firstBodyContact-Div .bodyContactHeadParag-Div .bodyContactParag-Div{
+    flex: 1;
+}
+
+.firstBodyContact-Div .bodyContactHeadParagLink-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div{
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid green;
+    background: white;
+}
+
+.firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div div{
+    justify-self: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+    padding: 5px;
+    width: 250px;
+    margin-top: 60px;
+}
+
+.firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div a{
+    text-decoration: none;
+}
