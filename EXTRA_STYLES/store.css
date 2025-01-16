@@ -30,7 +30,8 @@
     color: rgb(145, 126, 126);
     font-family: monospace;
     font-size: 22px;
-    padding: 5px;
+    /*padding: 5px;*/
+    padding-bottom: 900px;
 }
 
 .firstBodyStore-Div .firstBodycategory-Div ul li a{

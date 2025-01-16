@@ -1,18 +1,80 @@
+<?php 
+
+session_start();
+
+include("db.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
+     
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+
+    if (!empty($email) && !empty($password) && !is_numeric($email)) {
+
+        $query = "select * from registration where email = '$email' limit 1";
+        $result = mysqli_query($con, $query);
+
+        if ($result) {
+
+            if ($result && mysqli_num_rows($result) > 0) {
+                
+                $user_data = mysqli_fetch_assoc($result);
+
+                if ($user_data['password'] == $password) {
+                    
+                    header("location: contact.html");
+                    die;
+                }
+            }
+            
+        }
+
+        echo "<script type = 'text/javascript'> alert('Wrong Username Or Password') </script>";
+    }
+
+    echo "<script type = 'text/javascript'> alert('Wrong Username Or Password') </script>";
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../STYLES/nav.css">
-    <link rel="stylesheet" href="../STYLES/register.css">
+    <!--
+    <link rel="stylesheet" href="../STYLES/login.css">
     <link rel="stylesheet" href="../STYLES/footer.css">
+    -->
+    <link rel="stylesheet" href="../STYLES/NaijMall.css">
+    
     <link rel="shortcut icon" href="../IMAGES/NaijMall-Logo3.png" type="image/x-icon">
 
+    <title>login</title>
 
-    <title>register</title>
 </head>
 <body>
+
+
 
     <div class="header-Div">
 
@@ -45,13 +107,13 @@
             </div>
 
             <div class="navLink-Div">
-                <a href="../PAGES/register.html">
+                <a href="../PAGES/register.php">
                     <img src="../IMAGES/icons8-add-user-male-50.png" alt="register icon">
                     REGISTER</a>
             </div>
 
             <div class="navLink-Div">
-                <a href="../PAGES/login.html">
+                <a href="../PAGES/login.php">
                     <img src="../IMAGES/icons8-enter-100.png" alt="login icon">
                     LOGIN</a>
             </div>
@@ -61,26 +123,32 @@
         <div class="nav-Div">
 
             <div class="navLink-Div">
-                <a href="../PAGES/store.html" class="storeP2P">
+                <a href="../PAGES/store.php" class="storeP2P">
                     <img src="../IMAGES/icons8-online-store-30.png" alt="store icon">
                     STORE</a>
             </div>
 
+
+            <!--
             <div class="navLink-Div">
                 <a href="../PAGES/p2p.html" class="storeP2P">
                     <img src="../IMAGES/icons8-currency-exchange-50.png" alt="p2p icon">
                     P2P</a>
             </div>
+            -->
 
         </div>
 
         <div class="nav-Div">
 
+
+            <!--
             <div class="navLink-Div">
                 <a href="../PAGES/portfolio.html" class="portCart">
                     <img src="../IMAGES/icons8-wallet-50.png" alt="wallet icon">
                     PORTFOLIO</a>
             </div>
+            -->
 
             <div class="navLink-Div">
                 <a href="../PAGES/cart.html" class="portCart">
@@ -92,121 +160,52 @@
         </div>
         
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
 
     <div class="login-Div">
 
         <div class="innerlogin-Div">
+
             <div class="logHeader-Div">
                 <h1>YOU ARE WELCOME</h1>
-                <h2>CREATE AN ACCOUNT</h2>
+                <h2>PLEASE KINDLY LOGIN</h2>
             </div>
     
-            <div class="userPass-Div">
-                <label for="">FIRST NAME:</label><br>
-                <input type="text">
-            </div>
+            <form action="" method="POST">
+                
+                <div class="userPass-Div">
+                    <label for="">EMAIL:</label><br>
+                    <input type="text" name="email">
+                </div>
+        
+                <div class="userPass-Div">
+                    <label for="">PASSWORD:</label><br>
+                    <input type="text" name="password">
+                </div>
+
+                <div class="userPassSubmit-Div">
+                    <input type="submit" value="SUBMIT">
+                </div>
+
+            </form>
     
-            <div class="userPass-Div">
-                <label for="">LAST NAME:</label><br>
-                <input type="text">
-            </div>
-    
-            <div class="userPass-Div">
-                <label for="">MIDDLE NAME:</label><br>
-                <input type="text">
-            </div>
-    
-            <div class="userPass-Div">
-                <label for="">GMAIL:</label><br>
-                <input type="text">
-            </div>
-    
-            <div class="userPass-Div">
-                <label for="">NEW PASSWORD:</label><br>
-                <input type="text">
-            </div>
-    
-            <div class="userPass-Div">
-                <label for="">RE-ENTER NEW PASSWORD:</label><br>
-                <input type="text">
-            </div>
-    
+            <!--
             <div class="resetLog-Div">
                 <div><button type="reset">RESET</button></div>
-                <div><button type="submit">CREATE</button></div>
+                <div><button type="submit">LOGIN</button></div>
             </div>
+            -->
     
             <div class="forgetPass-Div">
                 <div>
                     <a href="forget_password.html">FORGET PASSWORD?</a>
                 </div>
             </div>
+
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -485,5 +484,4 @@
     </div>
 
 </body>
-
 </html>

@@ -1,12 +1,27 @@
+<?php
+
+include("db.php");
+
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../STYLES/nav.css">
+    <link rel="stylesheet" href="../STYLES/NaijMall.css">
+    <!--
     <link rel="stylesheet" href="../STYLES/footer.css">
     <link rel="stylesheet" href="../STYLES/store.css">
+    -->
     <link rel="shortcut icon" href="../IMAGES/NaijMall-Logo3.png" type="image/x-icon">
 
 
@@ -45,13 +60,13 @@
             </div>
 
             <div class="navLink-Div">
-                <a href="../PAGES/register.html">
+                <a href="../PAGES/register.php">
                     <img src="../IMAGES/icons8-add-user-male-50.png" alt="register icon">
                     REGISTER</a>
             </div>
 
             <div class="navLink-Div">
-                <a href="../PAGES/login.html">
+                <a href="../PAGES/login.php">
                     <img src="../IMAGES/icons8-enter-100.png" alt="login icon">
                     LOGIN</a>
             </div>
@@ -61,26 +76,31 @@
         <div class="nav-Div">
 
             <div class="navLink-Div">
-                <a href="../PAGES/store.html" class="storeP2P">
+                <a href="../PAGES/store.php" class="storeP2P">
                     <img src="../IMAGES/icons8-online-store-30.png" alt="store icon">
                     STORE</a>
             </div>
 
+
+            <!--
             <div class="navLink-Div">
                 <a href="../PAGES/p2p.html" class="storeP2P">
                     <img src="../IMAGES/icons8-currency-exchange-50.png" alt="p2p icon">
                     P2P</a>
             </div>
+            -->
 
         </div>
 
         <div class="nav-Div">
 
+            <!--
             <div class="navLink-Div">
                 <a href="../PAGES/portfolio.html" class="portCart">
                     <img src="../IMAGES/icons8-wallet-50.png" alt="wallet icon">
                     PORTFOLIO</a>
             </div>
+            -->
 
             <div class="navLink-Div">
                 <a href="../PAGES/cart.html" class="portCart">
@@ -117,7 +137,9 @@
     <div class="firstBodyStore-Div">
 
         <div class="firstBodycategory-Div">
-            <h2>CATEGORIES</h2>
+            <div>
+                <h2>CATEGORIES</h2>
+            </div>
             <ul>
                 <li><a href="./store.html">groceries</a></li>
                 <li><a href="./store.html">cars and vehicles</a></li>

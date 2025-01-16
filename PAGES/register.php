@@ -1,3 +1,54 @@
+<?php 
+
+    session_start();
+
+    include("db.php");
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST"){
+         
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $middlename = $_POST['middlename'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        if (!empty($email) && !empty($password) && !is_numeric($email)) {
+            # code...
+            $query = "insert into registration (firstname, lastname, middlename, email, password) values ('$firstname', '$lastname', '$middlename', '$email', '$password')";
+
+            mysqli_query($con, $query);
+
+            echo "<script type = 'text/javascript'> alert('Successfully Registered') </script>";
+
+        }else {
+            echo "<script type = 'text/javascript'> alert('Please Enter Some Valid Information') </script>";
+        }
+    }
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +57,14 @@
 
     <link rel="stylesheet" href="../STYLES/NaijMall.css">
     <!--
-    <link rel="stylesheet" href="../STYLES/contact.css">
+    <link rel="stylesheet" href="../STYLES/register.css">
     <link rel="stylesheet" href="../STYLES/footer.css">
     -->
     
     <link rel="shortcut icon" href="../IMAGES/NaijMall-Logo3.png" type="image/x-icon">
 
 
-
-    <title>contact</title>
+    <title>register</title>
 </head>
 <body>
 
@@ -70,7 +120,6 @@
                     STORE</a>
             </div>
 
-
             <!--
             <div class="navLink-Div">
                 <a href="../PAGES/p2p.html" class="storeP2P">
@@ -83,14 +132,13 @@
 
         <div class="nav-Div">
 
-
             <!--
             <div class="navLink-Div">
                 <a href="../PAGES/portfolio.html" class="portCart">
                     <img src="../IMAGES/icons8-wallet-50.png" alt="wallet icon">
                     PORTFOLIO</a>
             </div>
-            -->
+             -->
 
             <div class="navLink-Div">
                 <a href="../PAGES/cart.html" class="portCart">
@@ -141,72 +189,76 @@
 
 
 
+
+
     
-    <div class="firstBodyContact-Div">
 
-        <div class="bodyContactHeadParag-Div">
 
-            <div class="bodyContactHead-Div">
-                <h1>Contact Us</h1>
+    <div class="login-Div">
+
+        <div class="innerlogin-Div">
+
+            <div class="logHeader-Div">
+                <h1>YOU ARE WELCOME</h1>
+                <h2>CREATE AN ACCOUNT</h2>
             </div>
     
-            <div class="bodyContactParag-Div">
-                <p>Have Any Question? We Would Love To Hear From You <br> click the link below!</p>
-            </div>
+            <form action="" method="POST">
 
-        </div>
-
-        <div class="bodyContactHeadParagLink-Div">
-            <div class="innerBodyContactHeadParagLink-Div">
-                <h2>Press</h2>
-                <p>Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit.
-                    Qui totam illum nemo nesciunt 
-                    culpa nam corrupti quas, max!
-                </p>
-                <div>
-                    <a href="#">Visit Press Page</a>
+                <div class="userPass-Div">
+                    <label for="">FIRST NAME:</label><br>
+                    <input type="text" name="firstname">
                 </div>
-            </div>
-
-            <div class="innerBodyContactHeadParagLink-Div">
-                <h2>Help & Support</h2>
-                <p>Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit.
-                    Qui totam illum nemo nesciunt 
-                    culpa nam corrupti quas, max!
-                </p>
-                <div>
-                    <a href="#">Call Support</a>
+        
+                <div class="userPass-Div">
+                    <label for="">LAST NAME:</label><br>
+                    <input type="text" name="lastname">
                 </div>
-            </div>
+        
+                <div class="userPass-Div">
+                    <label for="">MIDDLE NAME:</label><br>
+                    <input type="text" name="middlename">
+                </div>
+        
+                <div class="userPass-Div">
+                    <label for="">EMAIL:</label><br>
+                    <input type="text" name="email">
+                </div>
+                
+                <div class="userPass-Div">
+                    <label for="">NEW PASSWORD:</label><br>
+                    <input type="text" name="password">
+                </div>
 
-            <div class="innerBodyContactHeadParagLink-Div">
-                <h2>Sales</h2>
-                <p>Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit.
-                    Qui totam illum nemo nesciunt 
-                    culpa nam corrupti quas, max!
-                </p>
+                <div class="userPassSubmit-Div">
+                    <input type="submit" value="SUBMIT">
+                </div>
+                
+                <!--
+                <div class="userPass-Div">
+                    <label for="">RE-ENTER NEW PASSWORD:</label><br>
+                    <input type="text">
+                </div>
+                -->
+
+            </form>
+    
+            <!--
+            <div class="resetLog-Div">
+                <div><button type="reset">RESET</button></div>
+                <div><button type="submit">CREATE</button></div>
+            </div>
+            -->
+    
+            <div class="forgetPass-Div">
                 <div>
-                    <a href="#">Contact Sale</a>
+                    <a href="forget_password.html">FORGET PASSWORD?</a>
                 </div>
             </div>
 
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -270,8 +322,8 @@
                 <p>
                     We make registering, <br>hosting, 
                     and managing domains for yourself <br>
-                    or others easy and affordable, <br>
-                    because the internet needs people.
+                     or others easy and affordable, <br>
+                     because the internet needs people.
                 </p>
             </div>
 
@@ -279,11 +331,7 @@
                 <p><b>Join Our Newsletter & Marketing Communication <br>
                     We'll send you news and offers.</b>
                 </p>
-                <input type="search" name="" id="" placeholder="Enter Your Email">
-                <button type="submit">
-                    <img src="../IMAGES/icons8-mail-50.png" alt="Email icon">
-                    JOIN
-                </button>
+                <input type="search" name="" id="" placeholder="Enter Your Email"><button type="submit">JOIN</button>
             </div>
 
         </div>
@@ -443,6 +491,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="bodyLastFooter-Div">
 
         <div class="bodyLastFooterLink-Div">
@@ -487,4 +557,5 @@
     </div>
 
 </body>
+
 </html>
