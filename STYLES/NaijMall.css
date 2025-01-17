@@ -179,24 +179,24 @@ body{
     flex:1;
     padding:10px;
     border-radius:15px;
-    color: white;
+    color:rgb(145, 126, 126);
     text-decoration: none;
     /*border:2px solid violet;*/
     font-size:20px;
     font-family: monospace;
-    Background: rgb(95, 17, 184);
+    background: rgb(233, 230, 230);
 }
 
 .header-Div .nav-Div .navLink-Div .storeP2P{
     flex:1;
     padding:10px;
     border-radius:15px;
-    color: white;
+    color:rgb(145, 126, 126);
     text-decoration: none;
     /*border:2px solid violet;*/
     font-size:20px;
     font-family: monospace;
-    Background: rgb(184, 17, 109);
+    background: rgb(233, 230, 230);
 }
 
 /*END OF THE HEADER-NAVIGATION STYLING*/
@@ -880,8 +880,16 @@ body{
     margin-top: 60px;
 }
 
+.firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div div:hover{
+    background: gray;
+}
+
 .firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div a{
     text-decoration: none;
+}
+
+.firstBodyContact-Div .bodyContactHeadParagLink-Div .innerBodyContactHeadParagLink-Div a:hover{
+    color: white;
 }
 
 
@@ -1409,6 +1417,7 @@ body{
     gap: 20px;
     padding-bottom: 100px;
     /*background: red;*/
+    color:rgb(145, 126, 126);
 }
 
 .firstBodyStore-Div .firstBodycategory-Div{
@@ -1661,14 +1670,171 @@ body{
 
 
 
-
+/*BEGINNING OF CART.CSS*/
 
 .cart-Div{
-    padding-top: 100px;
-    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(145, 126, 126);
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(248, 247, 247);
+    gap: 50px;
+    font-family: monospace;
+}
+
+.cart-Div .wallet-Cart-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+    width: 300px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px;
+    border-top: 5px solid green;
+    border-bottom: 5px solid greenyellow;
+    background: white;
+}
+
+.cart-Div .wallet-Cart-Div .wallet-Header-Cart-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-Div .wallet-Cart-Div .totalBal-Amount-Cart-Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px;
+}
+
+.cart-Div .wallet-Cart-Div .recieve-Send-Scan-Cart-Div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-Div .wallet-Cart-Div .recieve-Send-Scan-Cart-Div .rec-Send-Scan-Cart-Div button{
+    background: rgb(10, 189, 10);
+    color: white;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.cart-Div .wallet-Cart-Div .recieve-Send-Scan-Cart-Div .rec-Send-Scan-Cart-Div button:hover{
+    background: rgb(102, 105, 102);
 }
 
 
+
+
+
+
+
+
+.cart-Div .order-Cart-Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    gap:10px;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 100px;
+
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px;
+    border-top: 5px solid green;
+    border-bottom: 5px solid greenyellow;
+    background: white;
+}
+
+.cart-Div .order-Cart-Div .order-Header-Cart-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+.cart-Div .order-Cart-Div .mechandise-Shipping-Discount-Cart-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+.cart-Div .order-Cart-Div .mechandise-Shipping-Discount-Cart-Div .mech-ship-disc-Cart-Div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.cart-Div .order-Cart-Div .estimate-Parag-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.cart-Div .order-Cart-Div .estimate-Parag-Div .estimate-Total-cart-Div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+    text-align: center;
+}
+
+.cart-Div .order-Cart-Div .estimate-Parag-Div .parag-cart-Div{
+    flex: 1;
+    text-align: center;
+}
+
+.cart-Div .order-Cart-Div .proceed-cart-Div{
+    justify-self: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+    padding: 5px;
+    width: 250px;
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cart-Div .order-Cart-Div .proceed-cart-Div:hover{
+    background: rgb(102, 105, 102);
+}
+
+.cart-Div .order-Cart-Div .proceed-cart-Div a{
+    text-decoration: none;
+}
+
+.cart-Div .order-Cart-Div .proceed-cart-Div a:hover{
+    color: white;
+}
+
+/*END OF CART.CSS*/
 
 
 
