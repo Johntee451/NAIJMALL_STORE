@@ -170,7 +170,8 @@ include("db.php");
                 <li><a href="./store.html">gift cards</a></li>
                 <li><a href="./store.html">sport wears</a></li>
             </ul>
-                
+               
+            <!--
             <ul>
                 <li><a href="./store.html">groceries</a></li>
                 <li><a href="./store.html">cars and vehicles</a></li>
@@ -268,6 +269,7 @@ include("db.php");
                 <li><a href="./store.html">gift cards</a></li>
                 <li><a href="./store.html">sport wears</a></li>
             </ul>
+            -->
             
         </div>
     
@@ -287,12 +289,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/car1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$3,000</h2>
+                    <h4>MOUNTAIN TRUCK, a special kind, red mountain truck.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -301,12 +299,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/groceries1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$100</h2>
+                    <h4>YELLOW POMEGRANATE, rear fruit available here at naij'mall.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -315,12 +309,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/gadget1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$500</h2>
+                    <h4>ANCIENT TELEPHONE, used in the ancient days, black color ringing telephone.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -331,12 +321,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/food1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$1000</h2>
+                    <h4>CHICKEN FRIES, well ganished fries made with chinese delicacies.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -345,12 +331,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/fruit1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$300</h2>
+                    <h4>PURPLE BERRIES, bunch of berries, preserved for fresh comsumptions.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -359,12 +341,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/cloth1.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$150</h2>
+                    <h4>CLOTHES, specially hung for esteemed dressing occasions.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -390,12 +368,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/car2.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$4000</h2>
+                    <h4>GR7 RACING CAR, built for fast speed and comfort during journeies.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -404,12 +378,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/groceries2.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$350</h2>
+                    <h4>CABBAGE, available here of all various sizes. preserve in fresh, cool and moist conditions.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -418,12 +388,8 @@ include("db.php");
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/gadget2.jpg" alt="item image">
-                    <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h2>$1000</h2>
+                    <h4>RINGING TELEPHONE, ancient type of telephone for museum and as a gret artifact, buy at discount prices.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
@@ -433,16 +399,14 @@ include("db.php");
                 <div>
                     <img src="../IMAGES/food2.jpg" alt="item image">
                     <h2>$10,000</h2>
-                    <h4>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit.
-                        Eius eos assumenda cupiditate
-                        odit nostrum dignissimos rem
-                        atque, at error! Quas consectetur.
+                    <h4>JAPAN FRIES, cooked and served from the japanese delicate kitchen. Served hot and accomplined with chilled drinks, enjoy.
                     </h4>
                     <button type="submit">BUY</button>
                 </div>
             </div>
 
+
+            <!--
             <div class="firstBodyInnerImgPriceDesc-Div">
                 <div>
                     <img src="../IMAGES/fruit2.jpg" alt="item image">
@@ -838,6 +802,7 @@ include("db.php");
                     <button type="submit">BUY</button>
                 </div>
             </div>
+            -->
             
             
         </div>
